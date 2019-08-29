@@ -1,0 +1,125 @@
+body 	{
+	background-image: url('../img/8.jpg');
+	-webkit-background-size: cover;
+	background-size: cover;
+	font-family: sans-serif;
+}
+
+.btn {
+	transition: 0.3s ease-in-out;
+}
+
+button.btn-success {
+	text-transform: uppercase;
+}
+
+.flexed_column {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.flexed_row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+. {
+	margin-bottom: 20px;
+}
+.task__block {
+	margin: 10px;
+}
+.task__block h3 {
+	white-space: nowrap;
+}
+
+.card{
+	margin:10px;	
+	position: relative;
+	width: 210px;
+	height: 150px;
+	border-radius:10px;
+	perspective: 1000px;
+	background-color: transparent;
+}
+.front, .back{
+	border-radius:10px;
+	position: absolute;
+	width: 210px;
+	height: 150px;
+	left:-10px;
+	top:-10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+	transition: 1s ease-in-out;
+	backface-visibility: hidden;
+}
+.front {
+	
+	
+}
+.back {	
+	background-color: rgba(255,255,255,0.3);
+	transform: rotateY(180deg);
+	
+}
+.user__block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.user__block p {
+	font-weight: bold;	
+	white-space: nowrap;
+	width: 190px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	margin-top: 20px;
+}
+.user__block .user__block-exit{
+	width: 150px;
+	margin-bottom: 10px;
+}
+.card:hover .front {
+	transform: rotateY(180deg);
+}
+.card:hover .back {
+	transform: rotateY(360deg);
+}
+
+.img_wrapper {
+	width: 210px;
+	height: 150px;
+	box-sizing: border-box;						
+	border-radius: 10px ;
+}			
+.img_wrapper img {
+	overflow: hidden;
+	width: 100%;
+}
+.cover {
+	object-fit: cover;
+}
+
+.errorField {
+	border: 1px solid red;
+}
+
+table td{
+	padding:10px 20px;
+}
+.pointerCursorAdd {
+	cursor:pointer;
+}
+
+input[name=imgpath]{
+	background-color: transparent;
+}
+
+.btn__login, .btn__registrate {
+	width:100%;
+}

@@ -1,0 +1,23 @@
+//Auth
+	register
+	login
+	//logout
+	//currentUser текущий пользователь
+	//check Проверка на авторизованность 
+	//ban
+	//unban
+	//isbanned
+	//getUserStatus
+	//remove
+	//uplodaAvatar
+
+//image
+	//upload($img)
+	//delete($path)
+
+//Validate	
+
+//route
+
+
+	
