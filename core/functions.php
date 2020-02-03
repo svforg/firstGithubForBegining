@@ -75,4 +75,8 @@ function formErrors($errors = array()) {
 	return $output;
 }
 
- ?>
+
+function redirect_to($newLocation) {
+	header("Location:" . $newLocation);
+	exit;
+}

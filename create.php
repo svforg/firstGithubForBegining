@@ -1,17 +1,10 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-	<meta charset="UTF-8">
-	<title>LiveDiary</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+<?php require_once "../template-parts/header.php" ?>
+
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 col-xs-10">
 				<h1>Ceate Task</h1>
-				<form action="store.php" method="post">
+				<form action="/store" method="post">
 					<div class="form-group">
 						<input type="text" class="form-control" name="title">
 					</div>
@@ -26,5 +19,6 @@
 			</div>
 		</div>
 	</div>
-</body>
-</html>
+
+<?php require_once "../template-parts/footer.php" ?>
+

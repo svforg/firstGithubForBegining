@@ -1,10 +1,11 @@
 <?php
 
-//подключаем querybuilder
-require 'engine/queryBuilder.php';
+require_once "../core/QueryBuilder.php";
 
-$db = new queryBuilder;
+$db = new QueryBuilder;
 
 $db->addNew("quests", $_POST);
 
-header("location: index.php" ); exit;
+require_once "../core/functions.php";
+
+redirect_to("/"); exit;

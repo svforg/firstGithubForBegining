@@ -1,6 +1,6 @@
 <?php 
 
-class queryBuilder {
+class QueryBuilder {
 
 	public $pdo;
 
