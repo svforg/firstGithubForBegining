@@ -3,23 +3,34 @@
 $url = $_SERVER['REQUEST_URI'];
 
 // Роутинг
+switch ($url) {
+    case "/show":
+        $template = "../show.php";
+        break;
 
-if($url == '/show') {
-    require "../show.php";  exit;
+    case "/edit":
+        $template = "../edit.php";
+        break;
+
+    case "/create":
+        $template = "../create.php";
+        break;
+
+    case "/store":
+        $template = "../store.php";
+        break;
+
+    case "/delete":
+        $template = "../delete.php";
+        break;
+
+    case "/":
+        $template = "../delete.php";
+        break;
+
+    default:
+        $template = "../index";
+        break;
 }
-elseif($url == '/edit') {
-    require "../edit.php";  exit;
-}
-elseif($url == '/create') {
-    require "../create.php";  exit;
-}
-elseif($url == '/store') {
-    require "../store.php";  exit;
-}
-elseif($url == '/delete') {
-    require "../delete.php";  exit;
-}
-elseif($url == '/') {
-    require "../index.php";  exit;
-}
-require "../index.php";  exit;
+
+require $template;  exit;
